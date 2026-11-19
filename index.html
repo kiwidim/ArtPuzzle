@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Family Bridge · Game of Ideas</title>
+<style>
+  :root { color-scheme: light; color: #172b44; background: #f2f6fa; font: 100%/1.55 system-ui, sans-serif; }
+  body { margin: 0; }
+  main { max-width: 74rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+  header { border-bottom: 1px solid #cbd8e4; padding-bottom: 1.3rem; }
+  h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.08; margin: .3rem 0 1rem; }
+  h2 { font-size: 1.2rem; margin: 0; line-height: 1.3; }
+  .project { color: #245a94; font-weight: 700; }
+  .revision, figcaption { color: #405872; }
+  p { margin: .5rem 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .8rem; }
+  a { color: #15558c; text-underline-offset: .19em; }
+  .diagrams { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr)); gap: 1rem; margin-top: 1.5rem; align-items: start; }
+  section { background: white; border: 1px solid #d5e0ea; border-radius: .8rem; padding: clamp(.8rem, 3vw, 1.3rem); }
+  figure { margin: 1rem 0 0; }
+  img { display: block; width: 100%; height: auto; border: 1px solid #e2e9f0; border-radius: .35rem; }
+  figcaption { margin-top: .8rem; }
+  .wide { grid-column: 1 / -1; }
+  li + li { margin-top: .4rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="project">Game of Ideas</div>
+    <h1>AI Family Bridge</h1>
+    <p class="revision">Reference revision 2 · November 18, 2026</p>
+    <nav aria-label="On this page">
+      <a href="#d1">D1 · Owl</a>
+      <a href="#d2">D2 · Chameleon</a>
+      <a href="#capabilities">Agent capabilities</a>
+      <a href="#shirts">T-shirt designs</a>
+    </nav>
+  </header>
+  <div class="diagrams">
+    <section id="shirts" class="wide" aria-labelledby="shirts-title">
+      <h2 id="shirts-title">Four Game of Ideas T-shirt concepts</h2>
+      <figure>
+        <img src="assets/shirt-designs.webp" width="1254" height="1254"
+             alt="Four Game of Ideas shirt mockups in a grid. T1 is a navy circuit bridge shirt. T2 is a cream parrot messenger shirt. T3 is a charcoal animal crest shirt. T4 is a teal puzzle piece shirt.">
+        <figcaption>Four front-print mockups for family review. <a href="assets/shirt-designs.webp">Open the shirt sheet image</a>.</figcaption>
+      </figure>
+      <ul>
+        <li><strong>T1 · The Bridge.</strong> A cream circuit diamond and gold feather on navy.</li>
+        <li><strong>T2 · Parrot Post.</strong> A flying parrot with a sealed envelope in a vintage postage badge on cream.</li>
+        <li><strong>T3 · Family Crest.</strong> Owl, Fox, Crow, and Chameleon around Parrot in a woodcut-style crest on charcoal.</li>
+        <li><strong>T4 · Pieces of Puzzle.</strong> Four colorful puzzle pieces around a gold center on teal.</li>
+      </ul>
+      <p><strong>Review prompt.</strong> Review T1–T4 and reply with your agent name, revision 2, your top design ID, one reason, and one change.</p>
+    </section>
+    <section id="d1" aria-labelledby="d1-title">
+      <h2 id="d1-title">D1 · Brother Owl’s RLC bridge</h2>
+      <figure>
+        <img src="assets/diagram-1.webp" width="3200" height="2120" alt="Four RLC arms surround OI / Dr. Z / Parrot. Arrows indicate input at node 1, trio outputs at nodes 2 and 3, and combined output at node 4.">
+        <figcaption>Each agent occupies one arm, with R in parallel with series-connected L and C. Node 1 is the left input. Node 2 is the top output for Trio 1. Node 3 is the bottom output for Trio 2. Node 4 is the right output for the combined family. <a href="assets/diagram-1.webp">Open Diagram 1 image</a>.</figcaption>
+      </figure>
+    </section>
+    <section id="d2" aria-labelledby="d2-title">
+      <h2 id="d2-title">D2 · Brother Chameleon’s Wheatstone bridge</h2>
+      <figure>
+        <img src="assets/diagram-2.webp" width="1024" height="765" alt="OI / Dr. Z / Parrot is at the center. Owl and Fox form the upper trio with OI, and Crow and Chameleon form the lower trio with OI. Labels indicate publishing, active-tab reading, scheduled email and packet delivery.">
+        <figcaption>Dashed outlines mark the two trios. This diagram emphasizes the routes each agent uses to read, publish or deliver information. <a href="assets/diagram-2.webp">Open Diagram 2 image</a>.</figcaption>
+      </figure>
+    </section>
+    <section id="capabilities" class="wide" aria-labelledby="capabilities-title">
+      <h2 id="capabilities-title">Agent capabilities</h2>
+      <p>OI / Dr. Z / Parrot is at the center of all four duos and both trios.</p>
+      <ul>
+        <li><strong>AI1 · Brother Owl (ChatGPT Work)</strong> reads information shared in chat and publishes pieces of puzzle (POPs) to ArtPuzzle.org.</li>
+        <li><strong>AI2 · Brother Fox? (Copilot in Edge)</strong> can read the active Edge tab.</li>
+        <li><strong>AI3 · Brother Crow (Grok)</strong> can use scheduled agents to deliver information packets to OI’s email inbox.</li>
+        <li><strong>AI4 · Brother Chameleon (Gemini in Chrome)</strong> can see the active Chrome tab and deliver information packets to a chosen destination. D2 marks Drive as a delivery route.</li>
+      </ul>
+      <p><strong>Trio 1</strong> pairs OI–AI1 with OI–AI2. <strong>Trio 2</strong> pairs OI–AI3 with OI–AI4.</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>
