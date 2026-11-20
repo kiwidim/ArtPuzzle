@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Chat Tracker | Project and Public POPs</title>
+<style>
+  :root { color-scheme: light; color: #172b44; background: #f2f6fa; font: 100%/1.6 system-ui, sans-serif; }
+  body { margin: 0; }
+  main { max-width: 74rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+  header { border-bottom: 1px solid #cbd8e4; padding-bottom: 1.3rem; }
+  h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.08; margin: .3rem 0 1rem; }
+  h2 { font-size: 1.25rem; margin-top: 0; }
+  .project { color: #245a94; font-weight: 700; }
+  .revision { color: #405872; }
+  a { color: #15558c; text-underline-offset: .19em; }
+  nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  section { background: white; border: 1px solid #d5e0ea; border-radius: .8rem; padding: 1.2rem; }
+  li + li { margin-top: .45rem; }
+  code { background: #eaf2f8; padding: .08rem .3rem; border-radius: .25rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p><a href="../">ArtPuzzle and AI Family reference page</a></p>
+    <p class="project">AI Chat Tracker</p>
+    <h1>Keep the thread when AI conversations move</h1>
+    <p class="revision">Project record 1 · November 20, 2026</p>
+    <p>AI Chat Tracker is a provider-neutral ledger for conversation links, decisions, handoffs, and independent archives. It began as a practical response to work scattered across several ChatGPT tabs and is designed to support the wider AI Family.</p>
+    <nav aria-label="Project links">
+      <a href="README.md">Full project description</a>
+      <a href="https://conversation-tracker-dr-z.dr-z-4076.chatgpt.site">Live prototype</a>
+      <a href="#pops">Public POPs</a>
+    </nav>
+  </header>
+  <div class="grid">
+    <section>
+      <h2>What it records</h2>
+      <ul>
+        <li>A stable <code>CT</code> identifier and conversation title.</li>
+        <li>The provider, agent, project, timestamps, and status.</li>
+        <li>A direct or shareable chat link supplied by the user.</li>
+        <li>A separate link to an external summary or transcript.</li>
+        <li>Summary, decisions, and one concrete next action.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>How continuity works</h2>
+      <p>When work moves to another chat or agent, the tracker records the jump and creates a small JSON handoff packet. The receiving agent gets the source, destination, context, decisions, and next action without requiring access to the original provider account.</p>
+    </section>
+    <section>
+      <h2>How backups work</h2>
+      <p>The current app stores records in browser local storage and exports JSON or CSV. External archive links can point to OneDrive, Google Drive, Cloudflare storage, ChatGPT Library, or another user-controlled destination.</p>
+    </section>
+    <section>
+      <h2>What remains manual</h2>
+      <p>The app cannot inspect other private tabs or invent their URLs. Users paste direct or shareable links. A complete original record is required for a verbatim transcript; otherwise the archive must be labeled as a reconstruction or summary.</p>
+    </section>
+    <section>
+      <h2>Universal direction</h2>
+      <p>Any AI Family agent can create the portable record. Future adapters can connect supported providers through APIs, browser helpers, or MCP while preserving the same common fields and explicit permission model.</p>
+    </section>
+    <section>
+      <h2>Project direction</h2>
+      <p>This folder is the temporary public home inside ArtPuzzle. The application, documentation, and history can later move into an independent AI Chat Tracker repository.</p>
+    </section>
+  </div>
+  <section id="pops" style="margin-top:1rem">
+    <h2>Public Pieces of Puzzle</h2>
+    <ol>
+      <li><a href="pops/2026-11-20-working-ledger.html">From lost tabs to a working ledger</a></li>
+      <li><a href="pops/2026-11-20-links-and-archives.html">Separating chat links from independent archives</a></li>
+      <li><a href="pops/2026-11-20-universal-route.html">A universal route for the AI Family</a></li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>
